@@ -40,7 +40,26 @@
             <a href="projects.html">All Projects</a>
         </nav>
     </header>
+    <button type="button"
+        onclick="document.getElementById('hire-dialog').showModal()">
+    Hire me
+</button>
 
+<dialog id="hire-dialog">
+    <h2>Available for internships</h2>
+
+    <p>
+        I am available for internships and freelance web projects
+        from June 2027.
+    </p>
+
+    <p>Send me a message or download my CV.</p>
+
+    <button type="button"
+            onclick="document.getElementById('hire-dialog').close()">
+        Close
+    </button>
+</dialog>
 
     <!-- MAIN CONTENT -->
     <main>
@@ -143,7 +162,31 @@
                 <li>PHP and databases</li>
                 <li>Deploy my portfolio online</li>
             </ol>
+          <h3>Skill Levels</h3>
 
+<p>HTML:
+    <meter min="0" max="100" low="30" high="70"
+           optimum="90" value="80">80%</meter>
+    80%
+</p>
+
+<p>Python:
+    <meter min="0" max="100" low="30" high="70"
+           optimum="90" value="70">70%</meter>
+    70%
+</p>
+
+<p>JavaScript:
+    <meter min="0" max="100" low="30" high="70"
+           optimum="90" value="20">20%</meter>
+    20%
+</p>
+
+<p>C++:
+    <meter min="0" max="100" low="30" high="70"
+           optimum="90" value="60">60%</meter>
+    60%
+</p>
             <h3>Tools I Use</h3>
 
             <dl>
@@ -231,6 +274,13 @@
             <h3>BSc in Software Engineering</h3>
 
             <p>Addis Ababa Science and Technology University, 2023 – Present</p>
+            <h3>Degree Progress</h3>
+
+<label for="degree-progress">Degree progress: 40%</label>
+
+<progress id="degree-progress" value="40" max="100">
+    40%
+</progress>
 
             <h3>Academic Record</h3>
 
