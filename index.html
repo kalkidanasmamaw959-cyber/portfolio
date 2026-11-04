@@ -1,11 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Kalkidan Asmamaw, Software Engineering student.">
-    <meta name="keywords" content="Kalkidan, portfolio, software engineering, web development">
+
+    <meta name="description"
+          content="Portfolio of Kalkidan Asmamaw, Software Engineering student.">
+
+    <meta name="keywords"
+          content="Kalkidan, portfolio, software engineering, web development">
+
     <meta name="author" content="Kalkidan Asmamaw">
 
     <title>Kalkidan Asmamaw | Portfolio</title>
@@ -15,11 +21,12 @@
 
 <body>
 
-    <!-- HEADER -->
     <header>
+
         <canvas id="myLogo" width="120" height="120">
-    Kalkidan Asmamaw logo
-</canvas>
+            Kalkidan Asmamaw logo
+        </canvas>
+
         <h1>Kalkidan Asmamaw</h1>
 
         <img src="images/profile.jpg"
@@ -29,11 +36,37 @@
              height="200">
 
         <p>
-            Software Engineering student at Addis Ababa Science and Technology University
+            Software Engineering student at
+            Addis Ababa Science and Technology University
             and aspiring web developer.
         </p>
 
-        <!-- NAVIGATION -->
+        <button type="button"
+                onclick="document.getElementById('hire-dialog').showModal()">
+            Hire me
+        </button>
+
+        <dialog id="hire-dialog">
+
+            <h2>Available for internships</h2>
+
+            <p>
+                I am available for internships and freelance web projects
+                from June 2027.
+            </p>
+
+            <p>
+                Send me a message or download my
+                <abbr title="Curriculum Vitae">CV</abbr>.
+            </p>
+
+            <button type="button"
+                    onclick="document.getElementById('hire-dialog').close()">
+                Close
+            </button>
+
+        </dialog>
+
         <nav>
             <a href="#about">About</a> |
             <a href="#skills">Skills</a> |
@@ -42,103 +75,100 @@
             <a href="#contact">Contact</a> |
             <a href="projects.html">All Projects</a>
         </nav>
+
     </header>
 
-    <br>
-    <button type="button"
-        onclick="document.getElementById('hire-dialog').showModal()">
-    Hire me
-</button>
 
-<dialog id="hire-dialog">
-    <h2>Available for internships</h2>
-
-    <p>
-        I am available for internships and freelance web projects
-        from June 2027.
-    </p>
-
-    <p>Send me a message or download my <abbr title="Curriculum Vitae">CV</abbr>.</p>
-
-    <button type="button"
-            onclick="document.getElementById('hire-dialog').close()">
-        Close
-    </button>
-</dialog>
-
-    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- ABOUT SECTION -->
         <section id="about">
+
             <h2>About Me</h2>
 
             <p>
-                I am a Software Engineering student.at <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>
-                I <em>really</em> enjoy learning programming and developing applications.
+                I am a Software Engineering student at
+                <abbr title="Addis Ababa Science and Technology University">
+                    AASTU
+                </abbr>.
+                I <em>really</em> enjoy learning programming and
+                developing applications.
+
                 My current goal is to
                 <mark>become a skilled full-stack web developer</mark>.
             </p>
 
             <p>
                 Languages I have used:
-                <b>Python</b>, <b>C++</b>, <b>Java</b>, and <b>HTML</b>.
+                <b>Python</b>, <b>C++</b>, <b>Java</b>, and
+                <b><abbr title="HyperText Markup Language">HTML</abbr></b>.
+
                 I am also learning <i>CSS</i> and JavaScript.
             </p>
 
-            <p>A fun fact: Water's chemical formula is H<sub>2</sub>O.</p>
+            <p>
+                A fun fact: Water's chemical formula is
+                H<sub>2</sub>O.
+            </p>
 
 
-<h3>Hear my introduction</h3>
+            <h3>Hear my introduction</h3>
 
-<audio controls autoplay loop>
-    <source src="media/intro.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    
-</audio>
+            <audio controls>
+                <source src="media/intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
 
-            <!-- ASIDE -->
             <aside>
+
                 <h2>What Inspires Me</h2>
 
                 <blockquote>
-                    "It always seems impossible until it's done." — Nelson Mandela
+                    "It always seems impossible until it's done."
+                    — Nelson Mandela
                 </blockquote>
 
                 <p>
                     I believe
-                    <q>every day is a new opportunity to learn, improve, and grow</q>.
+                    <q>every day is a new opportunity to learn,
+                    improve, and grow</q>.
                 </p>
+
                 <h3>A Talk I Recommend</h3>
 
-<iframe
-    src="https://www.youtube.com/embed/MAlSjtxy5ak?si=q-zazRNUGgwMhRGu"
-    width="560"
-    height="315"
-    title="YouTube video: Name of the talk"
-    allowfullscreen>
-</iframe>
+                <iframe
+                    src="https://www.youtube.com/embed/MAlSjtxy5ak?si=q-zazRNUGgwMhRGu"
+                    width="560"
+                    height="315"
+                    title="Recommended YouTube talk"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
 
                 <p>
                     Book I am reading:
-                    <cite>Psycho-Cybernetics</cite> by Maxwell Maltz.
+                    <cite>Psycho-Cybernetics</cite>
+                    by Maxwell Maltz.
                 </p>
+
             </aside>
+
             <p>
-    My favourite tag is &lt;main&gt;, because it tells the browser
-    where the important content is &amp; helps screen readers.
-</p>
+                My favourite tag is &lt;main&gt;, because it tells
+                the browser where the important content is
+                &amp; helps screen readers.
+            </p>
+
         </section>
 
-
-        <!-- SKILLS SECTION -->
         <section id="skills">
+
             <h2>Skills</h2>
 
             <ul>
+
                 <li>Programming Languages
-                    <ul type="square">
+                    <ul>
                         <li>Python</li>
                         <li>C++</li>
                         <li>Java</li>
@@ -146,10 +176,13 @@
                 </li>
 
                 <li>Web Development
-                    <ul type="circle">
-                        <li><abbr title="HyperText Markup Language">HTML</abbr></li>
-                        <li><abbr title="Cascading Style Sheets">CSS</abbr> (learning)</li>
-                        <li><abbr title="JavaScript">JS</abbr> (learning)</li>
+                    <ul>
+                        <li>HTML</li>
+                        <li>
+                            <abbr title="Cascading Style Sheets">CSS</abbr>
+                            (learning)
+                        </li>
+                        <li>JavaScript (learning)</li>
                     </ul>
                 </li>
 
@@ -160,66 +193,92 @@
                         <li>Time Management</li>
                     </ul>
                 </li>
-            </ul>
-<h3>My Skill Levels Chart</h3>
 
-<canvas id="skillsChart" width="300" height="150">
-    Your browser does not support canvas.
-</canvas>
+            </ul>
+
+
             <h3>My Learning Roadmap</h3>
 
-            <ol type="1">
+            <ol>
                 <li>HTML structure and content</li>
                 <li>CSS layout and design</li>
                 <li>JavaScript and the DOM</li>
                 <li>PHP and databases</li>
                 <li>Deploy my portfolio online</li>
             </ol>
-          <h3>Skill Levels</h3>
 
-<p>HTML:
-    <meter min="0" max="100" low="30" high="70"
-           optimum="90" value="80">80%</meter>
-    80%
-</p>
 
-<p>Python:
-    <meter min="0" max="100" low="30" high="70"
-           optimum="90" value="70">70%</meter>
-    70%
-</p>
+            <!-- SKILL METERS -->
+            <h3>Skill Levels</h3>
 
-<p>JavaScript:
-    <meter min="0" max="100" low="30" high="70"
-           optimum="90" value="20">20%</meter>
-    20%
-</p>
+            <p>
+                HTML:
+                <meter min="0" max="100" low="30" high="70"
+                       optimum="90" value="80">80%</meter>
+                80%
+            </p>
 
-<p>C++:
-    <meter min="0" max="100" low="30" high="70"
-           optimum="90" value="60">60%</meter>
-    60%
-</p>
+            <p>
+                Python:
+                <meter min="0" max="100" low="30" high="70"
+                       optimum="90" value="70">70%</meter>
+                70%
+            </p>
+
+            <p>
+                JavaScript:
+                <meter min="0" max="100" low="30" high="70"
+                       optimum="90" value="20">20%</meter>
+                20%
+            </p>
+
+            <p>
+                C++:
+                <meter min="0" max="100" low="30" high="70"
+                       optimum="90" value="60">60%</meter>
+                60%
+            </p>
+
+
+            <h3>My Skill Levels Chart</h3>
+
+            <canvas id="skillsChart" width="300" height="150">
+                Your browser does not support canvas.
+            </canvas>
+
+
             <h3>Tools I Use</h3>
 
             <dl>
+
                 <dt>VS Code</dt>
-                <dd>The code editor I use to write and edit code.</dd>
+                <dd>
+                    The code editor I use to write and edit code.
+                </dd>
 
                 <dt>Chrome DevTools</dt>
-                <dd>A browser tool that helps inspect pages and find errors.</dd>
+                <dd>
+                    A browser tool that helps inspect pages
+                    and find errors.
+                </dd>
 
                 <dt>Git and GitHub</dt>
-                <dd>Tools I use to manage code versions and share my projects.</dd>
+                <dd>
+                    Tools I use to manage code versions
+                    and share my projects.
+                </dd>
+
             </dl>
+
         </section>
+    
 
-
-        <!-- PROJECTS SECTION -->
         <section id="projects">
+
             <h2>Projects</h2>
 
             <article>
+
                 <h3>EduConnect Ethiopia</h3>
 
                 <img src="images/project-educonnect.png"
@@ -228,12 +287,16 @@
                      height="250">
 
                 <p>
-                    A group project designed to help students and families discover
-                    schools in different Ethiopian cities.
+                    A group project designed to help students
+                    and families discover schools in different
+                    Ethiopian cities.
                 </p>
+
             </article>
 
+
             <article>
+
                 <h3>Simple Calculator</h3>
 
                 <img src="images/project-calculator.png"
@@ -242,12 +305,17 @@
                      height="250">
 
                 <p>
-                    A Java programming project that performs basic arithmetic operations,
-                    including addition, subtraction, multiplication, and division.
+                    A Java programming project that performs
+                    basic arithmetic operations, including
+                    addition, subtraction, multiplication,
+                    and division.
                 </p>
+
             </article>
 
+
             <article>
+
                 <h3>Movie Discovery Website</h3>
 
                 <img src="images/project-movieDiscovery.png"
@@ -256,53 +324,75 @@
                      height="250">
 
                 <p>
-                    A website designed to help users discover and explore movies.
+                    A website designed to help users discover
+                    and explore movies.
                 </p>
+
             </article>
 
+
             <p>
-                <a href="projects.html">View project details and technologies</a>
+                <a href="projects.html">
+                    View project details and technologies
+                </a>
             </p>
 
+
             <article>
+
                 <h3>My First Program</h3>
 
                 <p>
                     The first thing I wrote in C++ was
                     <code>cout &lt;&lt; "Hello, World!" &lt;&lt; endl;</code>.
+
                     Later, I wrote this loop:
                 </p>
 
                 <pre><code>for (int i = 0; i &lt; 3; i++) {
     cout &lt;&lt; "Hello, " &lt;&lt; i &lt;&lt; endl;
 }</code></pre>
+
             </article>
+
         </section>
 
 
-        <!-- EDUCATION SECTION -->
         <section id="education">
+
             <h2>Education</h2>
 
             <h3>BSc in Software Engineering</h3>
 
             <p>
-    <strong>Addis Ababa Science and Technology University</strong>,
-    <time datetime="2023-09">September 2023 – present</time>
-</p>
+                <strong>
+                    Addis Ababa Science and Technology University
+                </strong>,
+
+                <time datetime="2023-09">
+                    September 2023 – present
+                </time>
+            </p>
+
+
             <h3>Degree Progress</h3>
 
-<label for="degree-progress">Degree progress: 40%</label>
+            <label for="degree-progress">
+                Degree progress: 40%
+            </label>
 
-<progress id="degree-progress" value="40" max="100">
-    40%
-</progress>
+            <progress id="degree-progress" value="40" max="100">
+                40%
+            </progress>
+
 
             <h3>Academic Record</h3>
 
             <table border="1" cellpadding="8" cellspacing="0">
 
-                <caption>Academic Record — BSc in Software Engineering</caption>
+                <caption>
+                    Academic Record — BSc in Software Engineering
+                </caption>
 
                 <thead>
                     <tr>
@@ -314,7 +404,9 @@
                     </tr>
                 </thead>
 
+
                 <tbody>
+
                     <tr>
                         <th rowspan="8">Year 1</th>
                         <td rowspan="4">Semester I</td>
@@ -322,21 +414,25 @@
                         <td>3</td>
                         <td>A+</td>
                     </tr>
+
                     <tr>
                         <td>English</td>
                         <td>3</td>
                         <td>B</td>
                     </tr>
+
                     <tr>
                         <td>Geography</td>
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
                     <tr>
                         <td>Logic</td>
                         <td>3</td>
                         <td>A-</td>
                     </tr>
+
 
                     <tr>
                         <td rowspan="4">Semester II</td>
@@ -344,21 +440,25 @@
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
                     <tr>
                         <td>English</td>
                         <td>3</td>
                         <td>B+</td>
                     </tr>
+
                     <tr>
                         <td>Entrepreneurship</td>
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
                     <tr>
                         <td>Applied Mathematics</td>
                         <td>4</td>
                         <td>A-</td>
                     </tr>
+
 
                     <tr>
                         <th rowspan="7">Year 2</th>
@@ -367,21 +467,25 @@
                         <td>3</td>
                         <td>B</td>
                     </tr>
+
                     <tr>
                         <td>Introduction to Software</td>
                         <td>4</td>
                         <td>A</td>
                     </tr>
+
                     <tr>
                         <td>Discrete Mathematics</td>
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
                     <tr>
                         <td>Probability and Statistics</td>
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
 
                     <tr>
                         <td rowspan="3">Semester II</td>
@@ -389,17 +493,21 @@
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
                     <tr>
                         <td>Database</td>
                         <td>4</td>
                         <td>B</td>
                     </tr>
+
                     <tr>
                         <td>Fundamentals of Programming II</td>
                         <td>3</td>
                         <td>A</td>
                     </tr>
+
                 </tbody>
+
 
                 <tfoot>
                     <tr>
@@ -410,17 +518,18 @@
                 </tfoot>
 
             </table>
+
         </section>
 
-
-        <!-- CONTACT SECTION -->
         <section id="contact">
+
             <h2>Contact Me</h2>
 
             <p>
                 Email:
                 <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kalkidanasmamaw959@gmail.com"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Send me an email
                 </a>
             </p>
@@ -428,7 +537,8 @@
             <p>
                 GitHub:
                 <a href="https://github.com/kalkidanasmamaw959-cyber"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Visit my GitHub
                 </a>
             </p>
@@ -436,17 +546,20 @@
             <p>
                 LinkedIn:
                 <a href="https://www.linkedin.com/in/kalkidan-asmamaw-4a242b409"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Visit LinkedIn
                 </a>
             </p>
-            <p>
-          Phone: +251&nbsp;996&nbsp;570&nbsp;572
-        </p>
+
 
             <p>
-                <a href="files/cv.pdf" download>Download my <abbr title="Addis Ababa Science and Technology University">AASTU</abbr> CV (PDF)</a>
+                <a href="files/cv.pdf" download>
+                    Download my
+                    <abbr title="Curriculum Vitae">CV</abbr> (PDF)
+                </a>
             </p>
+
 
             <h3>Connect with Me</h3>
 
@@ -461,219 +574,335 @@
                       coords="14,114,198,255"
                       href="https://github.com/kalkidanasmamaw959-cyber"
                       alt="Visit my GitHub"
-                      target="_blank">
+                      target="_blank"
+                      rel="noopener noreferrer">
 
                 <area shape="rect"
                       coords="212,114,388,255"
                       href="https://www.linkedin.com/in/kalkidan-asmamaw-4a242b409"
                       alt="Visit LinkedIn"
-                      target="_blank">
+                      target="_blank"
+                      rel="noopener noreferrer">
 
                 <area shape="rect"
                       coords="401,114,588,255"
                       href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kalkidanasmamaw959@gmail.com"
                       alt="Send me an email"
-                      target="_blank">
+                      target="_blank"
+                      rel="noopener noreferrer">
 
             </map>
-        <h3>Where I Study</h3>
 
-<iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058128082!2d38.809753399999984!3d8.885165400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793706230648!5m2!1sen!2set"
-    width="600"
-    height="450"
-    title="Map of Addis Ababa Science and Technology University"
-    allowfullscreen>
-</iframe>    
-            
-<h3>Send me a message</h3>
+            <h3>Where I Study</h3>
 
-<form action="thank-you.html"
-      method="post"
-      enctype="multipart/form-data">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058128082!2d38.809753399999984!3d8.885165400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793706230648!5m2!1sen!2set"
+                width="600"
+                height="450"
+                title="Map of Addis Ababa Science and Technology University"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
 
-    <fieldset>
-        <legend>Your Details</legend>
+            <h3>Send me a message</h3>
 
-        <p>
-            <label for="fullname">Full name:</label>
-            <input type="text"
-                   id="fullname"
-                   name="fullname"
-                   required>
-        </p>
-
-        <p>
-            <label for="email">Email:</label>
-            <input type="email"
-                   id="email"
-                   name="email"
-                   required>
-        </p>
-    </fieldset>
-    
-<fieldset>
-    <legend>Project Details</legend>
-
-    <label for="phone">Phone (optional):</label>
-    <input type="text" id="phone" name="phone"
-           pattern="0[79][0-9]{8}"
-           title="10 digits starting with 09 or 07">
-    <br><br>
-
-    <p>Preferred contact method:</p>
-
-    <input type="radio" id="by-email" name="contact-method"
-           value="email" checked>
-    <label for="by-email">Email</label>
-
-    <input type="radio" id="by-phone" name="contact-method"
-           value="phone">
-    <label for="by-phone">Phone</label>
-
-    <br><br>
-
-    <label for="meeting">Preferred meeting date:</label>
-    <input type="date" id="meeting" name="meeting"
-           min="2026-11-01">
-    <br><br>
-
-    <label for="weeks">Project length (weeks):</label>
-    <input type="number" id="weeks" name="weeks"
-           min="1" max="52" step="1">
-    <br><br>
-
-    <label for="brief">Attach a project brief:</label>
-    <input type="file" id="brief" name="brief">
-    <br><br>
-
-    <label for="colour">Preferred website colour:</label>
-    <input type="color" id="colour" name="colour"
-           value="#1f5fa8">
-    <br><br>
-
-    <label for="rating">
-        How much do you like my portfolio? (1–10)
-    </label>
-    <input type="range" id="rating" name="rating"
-           min="1" max="10" value="7">
-
-</fieldset>
-<br><br>
-
-<label for="budget">Your budget (ETB):</label>
-<input type="number" id="budget" name="budget"
-       min="1000" step="500">
+            <form action="thank-you.html"
+                  method="post"
+                  enctype="multipart/form-data">
 
 
-    <fieldset>
-        <legend>Your Message</legend>
+                <fieldset>
 
-        <p>
-            <label for="reason">Reason for contacting me:</label>
+                    <legend>Your Details</legend>
 
-            <select id="reason" name="reason" required>
-                <option value="internship">Internship offer</option>
-                <option value="freelance">Freelance project</option>
-                <option value="full-time">Full-time job</option>
-                <option value="group-project">Group project</option>
-                <option value="tutoring">Tutoring</option>
-                <option value="other">Other</option>
-            </select>
-        </p>
+                    <p>
+                        <label for="fullname">Full name:</label>
 
-        <p>
-            <label for="message">Message:</label>
-            <textarea id="message"
-                      name="message"
-                      rows="6"
-                      cols="40"
-                      required></textarea>
-        </p>
-        <br>
+                        <input type="text"
+                               id="fullname"
+                               name="fullname"
+                               required>
+                    </p>
 
-<input type="checkbox" id="copy" name="copy" value="yes">
-<label for="copy">Send me a copy of this message</label>
-    </fieldset>
+                    <p>
+                        <label for="email">Email:</label>
 
-    <button type="submit">Send Message</button>
-    <button type="reset">Clear</button>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+                    </p>
 
-</form>
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Project Details</legend>
+
+                    <label for="phone">Phone (optional):</label>
+
+                    <input type="text"
+                           id="phone"
+                           name="phone"
+                           pattern="0[79][0-9]{8}"
+                           title="10 digits starting with 09 or 07">
+
+                    <br><br>
+
+                    <p>Preferred contact method:</p>
+
+                    <input type="radio"
+                           id="by-email"
+                           name="contact-method"
+                           value="email"
+                           checked>
+
+                    <label for="by-email">Email</label>
+
+                    <input type="radio"
+                           id="by-phone"
+                           name="contact-method"
+                           value="phone">
+
+                    <label for="by-phone">Phone</label>
+
+                    <br><br>
+
+                    <label for="meeting">Preferred meeting date:</label>
+
+                    <input type="date"
+                           id="meeting"
+                           name="meeting"
+                           min="2026-11-04">
+
+                    <br><br>
+
+                    <label for="weeks">Project length (weeks):</label>
+
+                    <input type="number"
+                           id="weeks"
+                           name="weeks"
+                           min="1"
+                           max="52"
+                           step="1">
+
+                    <br><br>
+
+                    <label for="brief">Attach a project brief:</label>
+
+                    <input type="file"
+                           id="brief"
+                           name="brief">
+
+                    <br><br>
+
+                    <label for="colour">Preferred website colour:</label>
+
+                    <input type="color"
+                           id="colour"
+                           name="colour"
+                           value="#1f5fa8">
+
+                    <br><br>
+
+                    <label for="rating">
+                        How much do you like my portfolio? (1–10)
+                    </label>
+
+                    <input type="range"
+                           id="rating"
+                           name="rating"
+                           min="1"
+                           max="10"
+                           value="7">
+
+                    <br><br>
+
+                    <label for="budget">Your budget (ETB):</label>
+
+                    <input type="number"
+                           id="budget"
+                           name="budget"
+                           min="1000"
+                           step="500">
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Your Message</legend>
+
+                    <p>
+                        <label for="reason">
+                            Reason for contacting me:
+                        </label>
+
+                        <select id="reason" name="reason" required>
+
+                            <option value="" selected disabled>
+                                Select a reason
+                            </option>
+
+                            <option value="internship">
+                                Internship offer
+                            </option>
+
+                            <option value="freelance">
+                                Freelance project
+                            </option>
+
+                            <option value="full-time">
+                                Full-time job
+                            </option>
+
+                            <option value="group-project">
+                                Group project
+                            </option>
+
+                            <option value="tutoring">
+                                Tutoring
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+                    </p>
+
+
+                    <p>
+                        <label for="message">Message:</label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  cols="40"
+                                  required></textarea>
+                    </p>
+
+
+                    <input type="checkbox"
+                           id="copy"
+                           name="copy"
+                           value="yes">
+
+                    <label for="copy">
+                        Send me a copy of this message
+                    </label>
+
+                </fieldset>
+
+
+                <button type="submit">Send Message</button>
+
+                <button type="reset">Clear</button>
+
+            </form>
 
 
             <p>
-                <a href="projects.html">Explore All My Projects</a>
+                <a href="projects.html">
+                    Explore All My Projects
+                </a>
             </p>
+
         </section>
 
     </main>
 
 
-    <!-- FOOTER -->
     <footer>
-        <p>
-    &copy; 2026 Kalkidan Asmamaw. All rights reserved.
-</p>
 
         <p>
-    Last updated:
-    <time datetime="2026-11-05">5 November 2026</time>
-</p>
+            &copy; 2026 Kalkidan Asmamaw. All rights reserved.
+        </p>
+
+        <p>
+            Last updated:
+            <time datetime="2026-11-05">5 November 2026</time>
+        </p>
+
     </footer>
-<script>
-const canvas = document.getElementById("myLogo");
-const ctx = canvas.getContext("2d");
 
-// Blue gradient background
-const gradient = ctx.createLinearGradient(0, 0, 120, 120);
-gradient.addColorStop(0, "#2563eb");
-gradient.addColorStop(1, "#102a56");
 
-ctx.fillStyle = gradient;
-ctx.fillRect(0, 0, 120, 120);
+    
+    <script>
 
-// White circle
-ctx.beginPath();
-ctx.arc(60, 60, 45, 0, 2 * Math.PI);
-ctx.fillStyle = "#ffffff";
-ctx.fill();
+       
+        const canvas = document.getElementById("myLogo");
+        const ctx = canvas.getContext("2d");
 
-// Circle outline
-ctx.lineWidth = 2;
-ctx.strokeStyle = "#dbeafe";
-ctx.stroke();
+        // Blue gradient background
+        const gradient = ctx.createLinearGradient(0, 0, 120, 120);
 
-// Initials
-ctx.fillStyle = "#163b75";
-ctx.font = "bold 32px Georgia";
-ctx.textAlign = "center";
-ctx.textBaseline = "middle";
-ctx.fillText("KA", 60, 60);
-// Get the skills canvas
-const skillsCanvas = document.getElementById("skillsChart");
-const skillsCtx = skillsCanvas.getContext("2d");
+        gradient.addColorStop(0, "#2563eb");
+        gradient.addColorStop(1, "#102a56");
 
-// HTML: 80%
-skillsCtx.fillStyle = "#2563eb";
-skillsCtx.fillRect(15, 34, 35, 96);
-skillsCtx.fillText("HTML", 32, 145);
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 120, 120);
 
-// Python: 70%
-skillsCtx.fillStyle = "#16a34a";
-skillsCtx.fillRect(85, 46, 35, 84);
-skillsCtx.fillText("Python", 102, 145);
 
-// JavaScript: 20%
-skillsCtx.fillStyle = "#eab308";
-skillsCtx.fillRect(155, 106, 35, 24);
-skillsCtx.fillText("JavaScript", 172, 145);
+        
+        ctx.beginPath();
 
-// C++: 60%
-skillsCtx.fillStyle = "#9333ea";
-skillsCtx.fillRect(225, 58, 35, 72);
-skillsCtx.fillText("C++", 242, 145);
-</script>
+        ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+
+        ctx.fillStyle = "#ffffff";
+        ctx.fill();
+
+        
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#dbeafe";
+        ctx.stroke();
+
+
+        
+        ctx.fillStyle = "#163b75";
+        ctx.font = "bold 32px Georgia";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        ctx.fillText("KA", 60, 60);
+
+
+
+        
+        const skillsCanvas = document.getElementById("skillsChart");
+        const skillsCtx = skillsCanvas.getContext("2d");
+
+        skillsCtx.font = "10px Arial";
+        skillsCtx.textAlign = "center";
+
+        skillsCtx.fillStyle = "#2563eb";
+        skillsCtx.fillRect(15, 34, 35, 96);
+        skillsCtx.fillStyle = "#000000";
+        skillsCtx.fillText("HTML", 32, 145);
+
+
+        // Python: 70%
+        skillsCtx.fillStyle = "#16a34a";
+        skillsCtx.fillRect(85, 46, 35, 84);
+        skillsCtx.fillStyle = "#000000";
+        skillsCtx.fillText("Python", 102, 145);
+
+
+        // JavaScript: 20%
+        skillsCtx.fillStyle = "#eab308";
+        skillsCtx.fillRect(155, 106, 35, 24);
+        skillsCtx.fillStyle = "#000000";
+        skillsCtx.fillText("JavaScript", 172, 145);
+
+
+        // C++: 60%
+        skillsCtx.fillStyle = "#9333ea";
+        skillsCtx.fillRect(225, 58, 35, 72);
+        skillsCtx.fillStyle = "#000000";
+        skillsCtx.fillText("C++", 242, 145);
+
+    </script>
+
 </body>
-
 </html>
