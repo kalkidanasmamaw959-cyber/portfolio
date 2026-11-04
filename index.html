@@ -17,6 +17,9 @@
 
     <!-- HEADER -->
     <header>
+        <canvas id="myLogo" width="120" height="120">
+    Kalkidan Asmamaw logo
+</canvas>
         <h1>Kalkidan Asmamaw</h1>
 
         <img src="images/profile.jpg"
@@ -40,6 +43,7 @@
             <a href="projects.html">All Projects</a>
         </nav>
     </header>
+
     <br>
     <button type="button"
         onclick="document.getElementById('hire-dialog').showModal()">
@@ -157,7 +161,11 @@
                     </ul>
                 </li>
             </ul>
+<h3>My Skill Levels Chart</h3>
 
+<canvas id="skillsChart" width="300" height="150">
+    Your browser does not support canvas.
+</canvas>
             <h3>My Learning Roadmap</h3>
 
             <ol type="1">
@@ -613,6 +621,59 @@
     <time datetime="2026-11-05">5 November 2026</time>
 </p>
     </footer>
+<script>
+const canvas = document.getElementById("myLogo");
+const ctx = canvas.getContext("2d");
 
+// Blue gradient background
+const gradient = ctx.createLinearGradient(0, 0, 120, 120);
+gradient.addColorStop(0, "#2563eb");
+gradient.addColorStop(1, "#102a56");
+
+ctx.fillStyle = gradient;
+ctx.fillRect(0, 0, 120, 120);
+
+// White circle
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "#ffffff";
+ctx.fill();
+
+// Circle outline
+ctx.lineWidth = 2;
+ctx.strokeStyle = "#dbeafe";
+ctx.stroke();
+
+// Initials
+ctx.fillStyle = "#163b75";
+ctx.font = "bold 32px Georgia";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("KA", 60, 60);
+// Get the skills canvas
+const skillsCanvas = document.getElementById("skillsChart");
+const skillsCtx = skillsCanvas.getContext("2d");
+
+// HTML: 80%
+skillsCtx.fillStyle = "#2563eb";
+skillsCtx.fillRect(15, 34, 35, 96);
+skillsCtx.fillText("HTML", 32, 145);
+
+// Python: 70%
+skillsCtx.fillStyle = "#16a34a";
+skillsCtx.fillRect(85, 46, 35, 84);
+skillsCtx.fillText("Python", 102, 145);
+
+// JavaScript: 20%
+skillsCtx.fillStyle = "#eab308";
+skillsCtx.fillRect(155, 106, 35, 24);
+skillsCtx.fillText("JavaScript", 172, 145);
+
+// C++: 60%
+skillsCtx.fillStyle = "#9333ea";
+skillsCtx.fillRect(225, 58, 35, 72);
+skillsCtx.fillText("C++", 242, 145);
+</script>
 </body>
+
 </html>
