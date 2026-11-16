@@ -1,0 +1,15 @@
+/*
+   Portfolio stylesheet
+   Chapter 3 - Lab 15
+*/
+
+/* Base styles */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h1 {
+    color: orange;
+}
