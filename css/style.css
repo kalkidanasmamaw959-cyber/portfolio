@@ -3,59 +3,59 @@
    Chapter 3 - Lab 15
 */
 
-/* Base styles */
-/* Palette
+/* ---------- Palette ---------- */
+/*
    Primary  #1f5fa8
    Dark     #22313f
    Accent   hsl(37, 91%, 55%)
    Light    #f4f6f9
-*/body {
+*/
+
+/* ---------- Base styles ---------- */
+
+html {
+    font-size: 16px;
+}
+
+body {
     background-color: #f4f6f9;
     color: #22313f;
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
 }
+
+/* ---------- Headings ---------- */
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
 h1 {
     color: #1f5fa8;
-}
-
-h2 {
-    color: rgb(31, 95, 168);
-}
-
-h3 {
-    color: hsl(212, 69%, 39%);
-}
-
-mark {
-    background-color: rgba(245, 166, 35, 0.35);
-}
-html {
-    font-size: 16px;
-}
-
-h1 {
     font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-}
-h1 {
     text-align: center;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
+    color: rgb(31, 95, 168);
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
+}
+
+h3 {
+    color: hsl(212, 69%, 39%);
+    font-size: 1.2rem;
+}
+
+/* ---------- Text and links ---------- */
+
+mark {
+    background-color: rgba(245, 166, 35, 0.35);
 }
 
 a {
@@ -71,3 +71,60 @@ blockquote {
 code, pre {
     font-family: 'Courier New', monospace;
 }
+
+/* ---------- Components ---------- */
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5a6b7d;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: #1f5fa8;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #5a6b7d;
+}
+
+.card {
+    background-color: white;
+}
+/* ---------- ID selectors ---------- */
+
+#contact {
+    background-color: #e8eef6;
+}
+/* ---------- Relationship selectors ---------- */
+
+/* Descendant selector */
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Child selector */
+.card > p {
+    color: #5a6b7d;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    font-size: 1.1rem;
+}
+
+/* General sibling selector */
+legend ~ label {
+    font-weight: 600;
+}
+
+
+
