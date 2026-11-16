@@ -4,12 +4,70 @@
 */
 
 /* Base styles */
-body {
+/* Palette
+   Primary  #1f5fa8
+   Dark     #22313f
+   Accent   hsl(37, 91%, 55%)
+   Light    #f4f6f9
+*/body {
     background-color: #f4f6f9;
-    font-family: Arial, sans-serif;
+    color: #22313f;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+h1 {
+    color: #1f5fa8;
 }
 
-/* Heading styles */
+h2 {
+    color: rgb(31, 95, 168);
+}
+
+h3 {
+    color: hsl(212, 69%, 39%);
+}
+
+mark {
+    background-color: rgba(245, 166, 35, 0.35);
+}
+html {
+    font-size: 16px;
+}
+
 h1 {
-    color: orange;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+a {
+    color: #1f5fa8;
+    text-decoration: none;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+code, pre {
+    font-family: 'Courier New', monospace;
 }
